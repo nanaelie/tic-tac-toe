@@ -15,6 +15,11 @@ app.set("views", "views");
 
 app.use(express.static("public"));
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const version_code = pkg.version + '(1)';
+
 app.get('/', (req, res) => {
     return res.render("index");
 })
@@ -24,14 +29,9 @@ app.get('/game', (req, res) => {
 })
 
 app.get('/infos', (req, res) => {
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname = path.dirname(__filename);
-
     const pkg = JSON.parse(
-      fs.readFileSync(path.join(__dirname, "/package.json"), "utf8")
+        fs.readFileSync(path.join(__dirname, "/package.json"), "utf8")
     );
-
-    const version_code = pkg.version + '(1)';
     const about = [
         "This Tic-Tac-Toe web application is a simple and lightweight project created for learning and experimentation.",
         "It focuses on clarity, ease of use, and delivering a smooth gameplay experience.",

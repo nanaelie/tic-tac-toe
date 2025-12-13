@@ -15,13 +15,13 @@
 @font-face {
   font-family: 'dm';
   src: url('/static/fonts/DMSans-Regular.ttf') format('truetype');
-  font-display: block; 
+  font-display: swap; 
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -33,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #181B2E;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -48,7 +48,7 @@ body {
     background-color: #212845;
     color: #FEFEFE;
     overflow: hidden;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 
     position: relative;
     z-index: 1;
@@ -335,7 +335,7 @@ div.col p.about-text {
     color: #eee;
     font-size: .8rem;
     margin-block: 4px;
-    font-family: "dm" !important;
+    font-family: "dm";
 }
 
 
