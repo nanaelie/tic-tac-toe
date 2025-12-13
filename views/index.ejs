@@ -27,6 +27,12 @@
             <span class="o">o</span>
             <div class="titleView">
                 <h1 class="title">Tic Tac Toe</h1>
+                <% if (isAdmin) { %>
+                    <p class="view-counter">
+                        Views: <%= counter %>
+                    </p>
+                <% } %>
+
             </div>
 
             <div class="actions">
