@@ -57,7 +57,7 @@ function isFull(board) {
 function reinit() {
     all('.buttons', '.item').forEach(item => {
         item.setAttribute("disabled", "true");
-        item.style.setProperty("cursor", "cursor: not-allowed !important");
+        item.style.setProperty("cursor", "not-allowed");
     });
 
     setTimeout(() => {
