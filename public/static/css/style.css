@@ -252,6 +252,10 @@ a {
     width: 200px;
 }
 
+a.results {
+    width: 100%;
+}
+
 .results div {
     width: 100%;
     display: flex;
