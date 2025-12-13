@@ -345,3 +345,8 @@ div.col p.about-text {
         display: flex;
     }
 }
+
+.view-counter {
+    text-align: center;
+    font-family: "dm";
+}
