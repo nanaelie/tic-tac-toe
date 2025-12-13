@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>tic-tac-toe</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="/static/css/sm.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Tic-Tac-Toe | Infos</title>
+    <meta name="description" content="Play Tic-Tac-Toe online. Simple, fast and fun game built with Node.js." />
+    <meta name="robots" content="index, follow" />
+    <link rel="preload" href="/static/css/style.css" as="style" />
+    <link rel="preload" href="/static/css/sm.css" as="style" />
+    <link rel="preload" href="/static/fonts/DMSans-Regular.ttf" as="style" />
+    <link rel="stylesheet" href="/static/css/sm.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="icon" href="/static/favicon.ico" />
 </head>
 
 <body>
@@ -26,7 +32,12 @@
         </div>
         
         <div class="infos">
-            <p>Morpion game v1.0.0(1)</p>
+            <p>Morpion game <%= version_code %></p>
+            <div class="col">
+                <% about.forEach(a => { %>
+                    <p class="about-text"><%= a %></p>
+                <% }) %>
+            </div>
         </div>
         
     </div>
