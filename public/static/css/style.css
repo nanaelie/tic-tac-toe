@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Poppins';
-    src: url("/static/fonts/Poppins-Regular.ttf") format('woff2');
+    src: url("/static/fonts/Poppins-Regular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -11,7 +11,6 @@
     font-weight: 900 !important;
     font-style: normal;
 }
-
 
 * {
     margin: 0;
@@ -228,6 +227,9 @@ body {
     font-weight: 900;
     height: 3.5rem;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: .5rem;
     font-size: 1.4rem;
     outline: none;
@@ -294,8 +296,8 @@ a {
     width: 120px;
     color: #160C03;
     font-weight: 500;
-    display: flex;
     padding-block: .3rem;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: none;
