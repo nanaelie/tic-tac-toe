@@ -12,6 +12,12 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'dm';
+  src: url('/static/fonts/DMSans-Regular.ttf') format('truetype');
+  font-display: block; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -309,4 +315,33 @@ a.results {
     font-size: 1rem;
     outline: none;
     background-color: #F8D320;
+}
+
+div.infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+div.col {
+    /*display: flex;
+    align-items: center;*/
+    text-align: center;
+}
+
+div.col p.about-text {
+    color: #eee;
+    font-size: .8rem;
+    margin-block: 4px;
+    font-family: "dm" !important;
+}
+
+
+
+@media (min-width: 800px) {
+    .leftside, .leftside ul {
+        display: flex;
+    }
 }
