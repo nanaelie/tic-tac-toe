@@ -1,0 +1,9 @@
+button, a {
+    cursor: pointer !important;
+}
+
+@media (min-width: 800px) {
+    .leftside, .leftside ul {
+        display: flex;
+    }
+}
