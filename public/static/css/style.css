@@ -207,7 +207,7 @@ body {
     top: 10rem;
     z-index: 9999;
     border: 1px solid #181818;
-    box-shadow: inset 0 0 5px 2px #212845;
+    box-shadow: 0 0 5px 2px #181818;
     align-items: center;
     justify-content: center;
     
@@ -218,6 +218,7 @@ body {
     color: #FEFEFE;
     font-size: 1.2rem;
     font-weight: 700;
+    font-family: "dm",
 }
 
 .actions {
