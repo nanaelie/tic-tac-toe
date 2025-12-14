@@ -82,14 +82,14 @@ all('.buttons', '.item').forEach(item => {
         let board = getArrays();
 
         if (checkWin(board, 1)) {
-            Alert('You won ! 🎉🙂');
+            Alert('You won !');
             reinit();
             userWins++;
             localStorage.setItem('userWins', JSON.stringify(userWins));
             return;
         }
         if (isFull(board)) {
-            Alert('Draw 😤');
+            Alert('Draw');
             reinit();
             draw++;
             localStorage.setItem('draw', JSON.stringify(draw));
@@ -101,14 +101,14 @@ all('.buttons', '.item').forEach(item => {
         board = getArrays();
 
         if (checkWin(board, 2)) {
-            Alert('Computer won ! 😐');
+            Alert('Computer won !');
             reinit();
             computerWins++;
             localStorage.setItem('computerWins', JSON.stringify(computerWins));
             return;
         }
         if (isFull(board)) {
-            Alert('Draw 😤');
+            Alert('Draw');
             draw++;
             localStorage.setItem('draw', JSON.stringify(draw));
             reinit();
@@ -299,4 +299,3 @@ function Alert(message) {
     }, 500);
 }
 
-// Alert('Vous avez gagné ! 🎉');
