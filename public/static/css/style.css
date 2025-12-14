@@ -198,13 +198,13 @@ body {
 
 .alert {
     width: 300px;
-    height: 150px;
     color: #FEFEFE;
     text-align: center;
     background-color: #181B2E;
-    border-radius: .6rem;
+    border-radius: 4px;
     position: absolute;
     top: 10rem;
+    padding-block: 1rem;
     z-index: 9999;
     border: 1px solid #181818;
     box-shadow: 0 0 5px 2px #181818;
