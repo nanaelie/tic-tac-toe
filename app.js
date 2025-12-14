@@ -47,9 +47,11 @@ app.get("/__ctn__", (req, res) => {
     res.cookie("is_admin", "true", {
         httpOnly: true,
         sameSite: "strict",
-        signed: true
+        signed: true,
+        maxAge: 1000 * 60 * 60 * 24 * 365 * 10
     });
-    res.send("Admin mode enabled");
+
+    return res.redirect("/");
 });
 
 app.get('/', async (req, res) => {
