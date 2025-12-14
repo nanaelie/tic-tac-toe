@@ -44,8 +44,16 @@ async function updateViewCounter() {
 }
 
 app.get("/__ctn__", (req, res) => {
+    const infos = {
+        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+        userAgent: req.headers["user-agent"],
+    };
+
+    console.log("Device info:", infos);
+    
     res.cookie("is_admin", "true", {
         httpOnly: true,
+        secure: true,
         sameSite: "strict",
         signed: true,
         maxAge: 1000 * 60 * 60 * 24 * 365 * 10
