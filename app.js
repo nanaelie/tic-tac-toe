@@ -63,7 +63,7 @@ app.get("/__ctn__", (req, res) => {
 });
 
 app.get('/', async (req, res) => {
-    updateViewCounter();
+    // updateViewCounter();
     
     const isAdmin = req.signedCookies.is_admin === "true";
     let counter;
